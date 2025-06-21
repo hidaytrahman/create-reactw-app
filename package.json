@@ -19,6 +19,6 @@
   "author": "Hidayt Rahman",
   "license": "MIT",
   "dependencies": {
-    "degit": "^3.0.2"
+    "degit": "^2.8.4"
   }
 }

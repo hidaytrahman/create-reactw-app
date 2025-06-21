@@ -26,7 +26,7 @@ emitter.clone(projectName).then(() => {
 
   try {
     console.log("📦 Installing dependencies...");
-    execSync(`cd ${projectName} && yarn install`, { stdio: "inherit" });
+    execSync(`cd ${projectName} && yarn`, { stdio: "inherit" });
     console.log("🎉 All done!");
     console.log(`👉 Get started with:\n   cd ${projectName}\n   yarn start`);
   } catch (error) {
