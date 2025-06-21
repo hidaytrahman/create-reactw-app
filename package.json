@@ -1,6 +1,6 @@
 {
   "name": "create-reactw-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a React + TypeScript + Webpack project using the template-rtw boilerplate",
   "bin": {
     "create-reactw-app": "./cli.js"
