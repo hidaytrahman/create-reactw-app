@@ -1,0 +1,24 @@
+{
+  "name": "create-rtw-app",
+  "version": "1.0.0",
+  "description": "Create a React + TypeScript + Webpack project using the template-rtw boilerplate",
+  "bin": {
+    "create-rtw-app": "./cli.js"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "webpack",
+    "starter",
+    "boilerplate",
+    "scaffold",
+    "create",
+    "cli",
+    "RTW"
+  ],
+  "author": "Hidayt Rahman",
+  "license": "MIT",
+  "dependencies": {
+    "degit": "^3.0.2"
+  }
+}

@@ -1,2 +1,8 @@
 # create-rtw-app
-custom CLI: create-rtw-app — which scaffolds your React + TypeScript + Webpack boilerplate directly using npx
+
+Create a new React + TypeScript + Webpack project using the [template-rtw](https://github.com/hidaytrahman/template-rtw) boilerplate.
+
+## Usage
+
+```bash
+npx create-rtw-app my-app
