@@ -1,5 +1,6 @@
 {
   "create-reactw-app": {
     "release-type": "node"
-  }
+  },
+  ".": "1.0.0"
 }
