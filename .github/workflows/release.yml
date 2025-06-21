@@ -1,0 +1,28 @@
+name: Release to npm
+
+on:
+  push:
+    tags:
+      - "v*.*.*" # Triggers only when you push a version tag like v1.0.0
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🚀 Publish to npm
+        run: yarn publish --non-interactive --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
