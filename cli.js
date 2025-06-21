@@ -9,7 +9,7 @@ const [, , projectName] = process.argv;
 if (!projectName) {
   console.error("❌ Please specify a project name:");
   console.log("   Example:");
-  console.log("     npx create-rtw-app my-app");
+  console.log("     npx create-reactw-app my-app");
   process.exit(1);
 }
 
@@ -19,7 +19,7 @@ const emitter = degit("hidaytrahman/template-rtw", {
   verbose: true,
 });
 
-console.log(`🚀 Creating a new RTW app in ./${projectName}`);
+console.log(`🚀 Creating a new RTW (React, Typescript with Webpack) app in ./${projectName}`);
 
 emitter.clone(projectName).then(() => {
   console.log("✅ Project cloned successfully!");
